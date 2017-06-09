@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"></meta>
+	</head>
+	<body>
+		<div class="news" >
+			<div class="font" >
+				<dl>
+					<dt>
+						<div class="header" >
+							<h3>近闻</h3>
+						</div>
+					</dt>
+					<dt></dt>
+					<dt>
+						<div class= "letter">
+							<input type="button" id="open" value="open file" onclick="getNews();" />
+							<input type="text" onchange="make();"/>
+						</div>
+					</dt>
+					<dt>
+						<div class = "newsBook">
+							
+						</div>
+					</dt>
+				</dl>
+			</div>
+		</div>
+	</body>
+	
+	<script>
+		function getNews(){
+			alert(1);
+		}
+		function make(){
+			alert("make");
+		}
+		window.alert=function(){
+			alert(1);
+		}
+	</script>
+	
+</html>
+
