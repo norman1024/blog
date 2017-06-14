@@ -49,5 +49,4 @@ public class Md5
 			throw new RuntimeException();
 		}
 	}
-	
 }

@@ -22,7 +22,7 @@
 		
 		<bean id = "dataSource" class = "org.apache.commons.dbcp.BasicDataSource" >
 			<property name = "driverClassName" value = "com.mysql.jdbc.Driver" />
-			<property name = "url" value = "jdbc:mysql://localhost:3306/blog" />
+			<property name = "url" value = "jdbc:mysql://localhost:3306/cloud_note" />
 			<property name = "username" value = "root" />
 			<property name = "password" value = "123456" />
 			<property name = "maxActive" value = "50" />

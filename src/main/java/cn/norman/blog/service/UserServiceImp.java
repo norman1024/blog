@@ -22,7 +22,6 @@ public class UserServiceImp implements UserService
 		if(password == null || password.trim().isEmpty()) { throw new NameOrPasswordException("密码不能为空!"); }
 		
 		User user = userDao.findUserByName(name);
-		
 		if(user == null) { throw new NameOrPasswordException("用户名或密码错误!"); }
 		if(user.getPassword().equals(Md5.md5(password)) || user.getPassword().equals(Md5.saltMd5(password)))
 		{
