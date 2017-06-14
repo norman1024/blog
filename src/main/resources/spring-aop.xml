@@ -23,7 +23,7 @@
 	<!-- resource/spring-aop.xml -->
 	
 	<context:component-scan 
-		base-package="cn.tedu.note.aop"/>
+		base-package="cn.norman.blog.aop"/>
 	<!-- 打开AOP注解支持, 
 	   用于支持 @Aspect 等注解 -->
 	<aop:aspectj-autoproxy 

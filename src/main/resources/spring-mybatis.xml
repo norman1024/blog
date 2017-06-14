@@ -28,24 +28,17 @@
 			<property name = "maxActive" value = "50" />
 		</bean>
 		
-		<bean id = "sqlSessionFactory" class = "org.mybatis.spring.sqlSessionFactoryBean" >
+		<bean id = "sqlSessionFactory" class = "org.mybatis.spring.SqlSessionFactoryBean" >
 			<property name = "dataSource" ref = "dataSource" />
 			<property name = "mapperLocations" value = "classpath:mapper/*.xml" />
 		</bean>
 		
-	<!-- 配置Mapper接口扫描 -->
-	<bean id="mapperScanner"
-		class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<!-- 扫描cn.tedu.note.dao中的mapper接口 -->
-		<property name="basePackage" 
-			value="cn.tedu.note.dao" />
-	</bean>
-	
+	<!-- 配置Mapper接口扫描 -->	
 	<bean id="mapperScanner2"
 		class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<!-- 扫描cn.tedu.note.dao中的mapper接口 -->
+		<!-- 扫描cn.norman.note.dao中的mapper接口 -->
 		<property name="basePackage" 
-			value="cn.tedu.blog.dao" />
+			value="cn.norman.blog.dao" />
 	</bean>
 	
 	

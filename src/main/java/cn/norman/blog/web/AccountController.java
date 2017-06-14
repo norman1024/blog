@@ -28,7 +28,7 @@ public class AccountController
 	public JsonResult<User> login(String username, String password, String code, HttpServletRequest request, HttpServletResponse response)
 	{
 		String serverCode = (String)request.getSession().getAttribute("code");
-		if(code == null || !serverCode.equals(code)) {return new JsonResult<User>("验证码无效");}
+		if(code == null || !code.equals(serverCode)) {return new JsonResult<User>("验证码无效");}
 		
 		User user = userService.login(username, password);
 		

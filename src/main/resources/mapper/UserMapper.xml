@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>  
 <!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
  "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
-<mapper namespace="cn.tedu.note.dao.UserDao">
-	<insert id="saveUser" 
-	parameterType="cn.tedu.note.entity.User">
+<mapper namespace="cn.norman.blog.dao.UserDao">
+	<!-- <insert id="saveUser" 
+	parameterType="cn.norman.blog.entity.User">
 		insert into cn_user
 			(cn_user_id, 
 			cn_user_name,
@@ -17,7 +17,7 @@
 
 	<select id="findUserById"
 		parameterType="string"
-		resultType="cn.tedu.note.entity.User">
+		resultType="cn.norman.blog.entity.User">
 		select 
 			cn_user_id as id,
 			cn_user_name as name,
@@ -28,6 +28,21 @@
 			cn_user
 		where	
 			cn_user_id=#{id}
+	</select>	 -->
+	
+		<select id="findUserByName"
+		parameterType="string"
+		resultType="cn.norman.blog.entity.User">
+		select 
+			cn_user_id as id,
+			cn_user_name as name,
+			cn_user_password as password,
+			cn_user_token as token,
+			cn_user_nick as nick
+		from
+			cn_user
+		where	
+			cn_user_name=#{name}
 	</select>	
 </mapper>
 

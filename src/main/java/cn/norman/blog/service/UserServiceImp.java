@@ -7,6 +7,7 @@ import org.springframework.transaction.annotation.Transactional;
 import cn.norman.blog.entity.User;
 import cn.norman.blog.dao.UserDao;
 import cn.norman.blog.util.Md5;
+import org.mybatis.spring.SqlSessionFactoryBean;
 
 @Service("userService")
 public class UserServiceImp implements UserService
