@@ -22,7 +22,7 @@
 	<!-- spring-web.xml -->
 	
 	<context:component-scan 
-		base-package="cn.tedu.note.web"/>
+		base-package="cn.norman.blog.web"/>
 		
 	<mvc:annotation-driven/>
  	

@@ -21,7 +21,7 @@
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd">
 	<!-- spring-service.xml -->
 	<context:component-scan 
-		base-package="cn.tedu.note.service"/>
+		base-package="cn.norman.blog.service"/>
 	 
 </beans>
 
