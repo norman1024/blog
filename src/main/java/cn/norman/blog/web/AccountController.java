@@ -29,7 +29,7 @@ public class AccountController
 {
 	@Autowired
 	private UserService userService;
-	
+	//test for new mation
 	@RequestMapping("/login")
 	@ResponseBody
 	public JsonResult<User> login(String name, String password, String code, HttpServletRequest request, HttpServletResponse response)
@@ -127,5 +127,5 @@ public class AccountController
 		if(code.equals(serverCode)){ return new JsonResult<Boolean>(true); }
 		return new JsonResult<Boolean>("Ê§°Ü!");
 	}
-	
+
 }
